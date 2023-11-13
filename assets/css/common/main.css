@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@300;700&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,300&display=swap');
+
+.profile_inner span{
+    line-height: 1.z;
+    font-size: 1.1em;
+
+}
+
+.profile_inner h1{
+    font-size: 3em;
+}
+
+.profile_inner i{
+    font-size: 1.3em;
+}
+
+
+body {
+  position: relative;
+}
+
+
+.list.dark .sticky-header{
+background-color: rgba(29, 30, 32, 0.95); /* Black color with 40% transparency */
+}
+
+
+
+
+body.list.dark::before, body.dark::before{
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(29, 30, 32, 0.95), rgba(29, 30, 32, 0.7)), url('../../home/bg-forest.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensure the overlay is behind other content */
+}
+
+
+
+body.list::before,body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255,255,255, 0.6)), url('../../home/bg-forest.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: -1; /* Ensure the overlay is behind other content */
+}
+
+
+.dark.list{
+    background: none;
+}
+
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;   
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.post-content a, .toc a:hover {
+    box-shadow: 0 0:;
+}
+
+strong{
+    font-weight: 700;
+}
+
+.main {
+    position: relative;
+    min-height: calc(100vh - var(--footer-height));
+    max-width: var(--main-width);
+    margin: auto;
+    padding: var(--gap);
+    padding-top: calc(var(--header-height) + var(--gap));
+}
+
+.profile img{
+    border-radius: 0;
+
+}
+
+.page-header h1 {
+    font-size: 40px;
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination a {
+    color: var(--theme);
+    font-size: 13px;
+    line-height: 36px;
+    background: var(--primary);
+    border-radius: calc(36px / 2);
+    padding: 0 16px;
+}
+
+.pagination .next {
+    margin-inline-start: auto;
+}
+
+.social-icons {
+    padding: 12px 0;
+}
+
+.social-icons a:not(:last-of-type) {
+    margin-inline-end: 12px;
+}
+
+.social-icons a svg {
+    height: 26px;
+    width: 26px;
+}
+
+code {
+    direction: ltr;
+}
+
+div.highlight,
+pre {
+    position: relative;
+}
+
+.copy-code {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: rgba(255, 255, 255, 0.   8);
+    background: rgba(78, 78, 78, 0.8);
+    border-radius: var(--radius);
+    padding: 0 5px;
+    font-size: 14px;
+    user-select: none;
+}
+
+div.highlight:hover .copy-code,
+pre:hover .copy-code {
+    display: block;
+}
+
+/* Regular link styles */
+a {
+  text-decoration: underline; /* Add underlines to links */
+  transition: color 0.3s; /* Smooth color transition on hover/focus */
+}
+
+
+.social-icons{
+    margin-top: 16px;
+}
+
+.social-icons a{
+
+    text-decoration: none;
+}
+
+/* Remove underlines on hover/focus, but keep the color change */
+a:hover, a:focus {
+  text-decoration: none;
+  color: #0056b3; /* Adjust color on hover/focus for better contrast */
+  transition: color 0.3s; /* Smooth color transition on hover/focus */
+}
+
+/* Visited link styles */
+a:visited {
+/*  color: #663399;  Visited link color */
+}
+
+/* Add focus styles for keyboard navigation */
+a:focus {
+  outline: 2px solid #0074d9; /* Add a focus outline for keyboard users */
+}
+
+/* Style links in buttons (optional) */
+.button a {
+  text-decoration: none;
+}
+
+/* Style links in navigation menus (optional) */
+.nav a {
+  text-decoration: none;
+}

@@ -1,0 +1,104 @@
+baseURL: "https://ste.design"
+languageCode: en-us
+title: Stefano Grassi
+theme: PaperMod
+
+menu:
+  main:
+    # - identifier: home
+    #   name: Home
+    #   url: /
+    #   weight: 10
+    - identifier: about
+      name: About
+      url: /about
+      weight: 40
+    - identifier: portfolio
+      name: Portfolio
+      url: Stefano_Grassi-Portfolio.pdf
+      weight: 30
+    - identifier: LinkedIn
+      name: LinkedIn
+      url: https://www.linkedin.com/in/grassistefano
+      weight: 40
+    # - identifier: search
+    #   name: Search
+    #   url: /search
+    #   weight: 50
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags
+    #   weight: 60
+    # - identifier: notes
+    #   name: Notes
+    #   url: https://notes.arkalim.org
+    #   weight: 70
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "Stefano Grassi"
+    subtitle: <i>Ciao!</i><br>I'm a [**Senior UX Designer**]() from Milan (Italy).<br>I'm passionate about [**accessibility**](https://www.credly.com/badges/22151118-de46-409a-9aa3-34892f4e79ef/public_url) and [**sounds**](https://revok.bandcamp.com/).<hr>Currently working at [**AKQA Italy**](https://www.akqa.com/studios/milan/).
+    imageUrl: "home/stefano_grassi-portrait.png"
+    imageWidth: 220
+    imageHeight: 220
+    # buttons:
+    #   - name: Resume
+    #     url: ""
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:info@ste.design"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/grassistefano"
+    # - name: "github"
+    #   url: "https://github.com/"
+    # - name: "youtube"
+    #   url: "https://www.youtube.com/c/"
+    # - name: "cv"
+    #   url: "https://drive.google.com/file/"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    # - RSS
+    # - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+      hrefTargetBlank: true
+    
+
