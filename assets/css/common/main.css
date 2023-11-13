@@ -92,8 +92,7 @@ strong{
 }
 
 .profile img{
-    border-radius: 0;
-
+    border-radius: 0!important;
 }
 
 .page-header h1 {
